@@ -1,12 +1,53 @@
+# ── Secrets / environment ─────────────────────────────────────────────────
 .env
+.env.local
+*API KEY*
+*.key
+
+# ── Virtual environments ──────────────────────────────────────────────────
+venv/
+.venv/
+env/
+ENV/
+
+# ── Python caches / build artifacts ───────────────────────────────────────
 __pycache__/
-*.pyc
+*.py[cod]
+*.egg-info/
+build/
+dist/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+.coverage
+htmlcov/
+
+# ── Editors / OS ──────────────────────────────────────────────────────────
 .idea/
-.vscode/settings.json
-~/.nexus_ai/
-venv/
-*API KEY*
-*.key
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# ── Runtime data (lives in $HOME/.nexus_ai) ───────────────────────────────
+.nexus_ai/
+
+# ── Local dev debris / one-off migration scripts (kept on disk, not in repo)
+/0
+/test.txt
+/install_log.txt
+/error 1.txt
+/error 2.txt
+/Master Prmpt.txt
+/next step.txt
+/prompt.txt
+/prompt.py
+/fix_core_integration.py
+/fix_ws_server.py
+/fix_orchestrator.py
+/fix_orchestrator_v2.py
+/gen_reg.py
+/probe_import.py
+/run_method.py
+/new_run_method.py
+/scaffold.py
